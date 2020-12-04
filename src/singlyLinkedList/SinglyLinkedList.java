@@ -9,21 +9,17 @@ class Node {
 	public Node next;
 	
 	public void displayNodeData() {
-		//maybe change to just data, or "value inside node = data"
-		//I think like this maybe is confusing
-		System.out.println("{ " + data +  " }");
+		System.out.print( data +  " -> ");
 	}
 	
 }
 
 public class SinglyLinkedList {
-	//This one is the first Node and it can be a dummy or
-	//not, used to not need to specify condition null
 	//Its private because we only need to reference head
 	//inside this class
-	private Node head;
+	private Node head; //here head == null
 	
-	public void insert(int data) {
+	public void insertFirst(int data) {
 		Node newNode = new Node();
 		newNode.data = data;
 		newNode.next = head;
@@ -79,6 +75,7 @@ public class SinglyLinkedList {
 			current = current.next;
 			
 		}
+		System.out.print("NULL");
 
 	}
 }
