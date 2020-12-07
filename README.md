@@ -10,9 +10,9 @@ This is a repository that I'm building with some java Implementations of common 
 
 ## List of implementations
 
-- [Doubly Linked List](https://github.com/GMkonan/A-DS_Java/tree/master/src/singlyLinkedList)
+- [Singly Linked List](https://github.com/GMkonan/A-DS_Java/tree/master/src/singlyLinkedList)
 
-- [Singly Linked List](https://github.com/GMkonan/A-DS_Java/tree/master/src/doublyLinkedList)
+- [Doubly Linked List](https://github.com/GMkonan/A-DS_Java/tree/master/src/doublyLinkedList)
 
 
 
