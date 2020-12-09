@@ -2,7 +2,10 @@ package selectionSort;
 
 public class SelectionSortMain {
 	public static void main(String args[]) {
+	
 	SelectionSort selection = new SelectionSort();
+	
+	//create the array
 	int[] arr = {10, 6, 4, 8, 2};
 	
 	//This is gonna print the original array

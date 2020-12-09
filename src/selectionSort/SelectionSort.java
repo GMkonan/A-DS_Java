@@ -2,29 +2,31 @@ package selectionSort;
 
 public class SelectionSort {
 	int [] sort(int[] arr) {
-		int min;
 		int index;
-		int temp;
 		//looping the unsorted list
 		for (int first = 0; first < arr.length; first++) {
 			
-			//first position and minimum value
-			min = arr[first];
-			//minimum index
+			//index starts at first but changes in every loop
 			index = first;
+			
+			
+			//then every loop the index is compared with all numbers in the list
 			for (int i = first + 1; i < arr.length; i++) {
-				if (arr[i] < min) {
-					min = arr[i];
+				//check if value is lower
+				if (arr[i] < arr[index]) {
+					//if it is, change index to it
 					index = i;
 				}
 			}
+			
 			//holds the value of the minimum we found
-			temp = min;
+			int temp = arr[index];
 			//places the value that was in the start at the place we found our index
 			arr[index] = arr[first];
 			//puts the value from the index in the start
 			arr[first] = temp;
 		}
+		//terminate the loop and return array sorted
 		return arr;
 		
 	}
