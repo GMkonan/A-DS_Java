@@ -1,7 +1,7 @@
 package selectionSort;
 
 public class SelectionSort {
-	int [] sort(int[] arr) {
+	int[] sort(int[] arr) {
 		int index;
 		//looping the unsorted list
 		for (int first = 0; first < arr.length; first++) {
@@ -10,7 +10,8 @@ public class SelectionSort {
 			index = first;
 			
 			
-			//then every loop the index is compared with all numbers in the list
+			//then every loop the index is compared with all numbers
+			//except the one we are comparing to (the index)
 			for (int i = first + 1; i < arr.length; i++) {
 				//check if value is lower
 				if (arr[i] < arr[index]) {
@@ -30,7 +31,6 @@ public class SelectionSort {
 		return arr;
 		
 	}
-	
 	void printArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " | ");

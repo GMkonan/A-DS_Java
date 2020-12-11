@@ -2,7 +2,6 @@ package selectionSort;
 
 public class SelectionSortMain {
 	public static void main(String args[]) {
-	
 	SelectionSort selection = new SelectionSort();
 	
 	//create the array
