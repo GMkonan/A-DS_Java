@@ -14,7 +14,8 @@ This is a repository that I'm building with some java Implementations of common 
 
 - [Doubly Linked List](https://github.com/GMkonan/A-DS_Java/tree/master/src/doublyLinkedList)
 
-
+- [Selection Sort](https://github.com/GMkonan/A-DS_Java/tree/master/src/selectionSort)
+- [Binary Search](https://github.com/GMkonan/A-DS_Java/tree/master/src/binarySearch)
 
 ### Authors
 
