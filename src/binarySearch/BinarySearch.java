@@ -41,8 +41,24 @@ public class BinarySearch {
 		return index;
 	}
 	
-	int recursiveSearch(int[] arr, int key) {
-		return key;
+	int recursiveSearch(int[] arr, int key, int first, int last) {
+		int index = 0;
 		
+		int mid = (first + last)/2;
+		
+		if (first > last) {
+			return -1;
+		}
+		
+		if(arr[mid] < key) {
+			return recursiveSearch(arr,key,mid + 1, last);
+		}
+		else if (arr[mid] == key) {
+			index = mid;
+			return index;
+		}
+		else {
+			return recursiveSearch(arr,key,first, mid - 1);
+		}
 	}
 }

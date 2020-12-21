@@ -8,6 +8,17 @@ public class BinarySearchMain {
 		
 		binary.search(arr,key);
 		
+		int first = 0;
+		int last = arr.length - 1;
 		
+		
+		int recursive = binary.recursiveSearch(arr, key, first, last);
+		
+		if(recursive == -1) {
+			System.out.println("Not found 404");
+		}
+		else {
+			System.out.println("Found at position " + recursive);
+		}
 	}
 }
