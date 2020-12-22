@@ -6,7 +6,7 @@ public class BinarySearchMain {
 		int[] arr = {10, 6, 4, 8, 2};
 		int key = 8;
 		
-		binary.search(arr,key);
+		binary.iterativeSearch(arr,key);
 		
 		int first = 0;
 		int last = arr.length - 1;

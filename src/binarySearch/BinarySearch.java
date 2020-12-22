@@ -1,7 +1,7 @@
 package binarySearch;
 
 public class BinarySearch {
-	int search(int[] arr, int key) {
+	int iterativeSearch(int[] arr, int key) {
 		
 		//need to start writing the comments explaining
 		
@@ -23,8 +23,11 @@ public class BinarySearch {
 			}
 			//if item in mid make it equal index, break the loop and return at the end
 			else if (arr[mid] == key) {
+				//define index as mid
 				index = mid;
+				//print result
 				System.out.println("The position of " + key + " is " + index);
+				//break from the while loop
 				break;
 			}
 			else {
@@ -38,26 +41,34 @@ public class BinarySearch {
 		if (first > last) {
 			System.out.println("not found 404");
 		}
+		//return value
 		return index;
 	}
 	
 	int recursiveSearch(int[] arr, int key, int first, int last) {
+		
+		//just a placeholder
 		int index = 0;
 		
 		int mid = (first + last)/2;
 		
+		//base case
 		if (first > last) {
 			return -1;
 		}
 		
 		if(arr[mid] < key) {
+			//return recursive but with first being shifted left from mid
 			return recursiveSearch(arr,key,mid + 1, last);
 		}
 		else if (arr[mid] == key) {
+			//recursive is gonna end up here at the end
 			index = mid;
+			//return the value
 			return index;
 		}
 		else {
+			//return recursive but with last being shifted right from mid
 			return recursiveSearch(arr,key,first, mid - 1);
 		}
 	}
