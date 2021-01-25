@@ -15,7 +15,7 @@ public class BinarySearchMain {
 		int recursive = binary.recursiveSearch(arr, key, first, last);
 		
 		if(recursive == -1) {
-			System.out.println("Not found 404");
+			System.out.println("Not found");
 		}
 		else {
 			System.out.println("Found at position " + recursive);

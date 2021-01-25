@@ -1,16 +1,15 @@
 package binarySearch;
 
 public class BinarySearch {
-	int iterativeSearch(int[] arr, int key) {
+	void iterativeSearch(int[] arr, int key) {
 		
-		//need to start writing the comments explaining
 		
 		//just a placeholder
 		int index = 0;
 		
 		//defines the first one in the array
 		int first = 0;
-		//defines last one in the array
+		//defines last one in the arrayF
 		int last = arr.length - 1;
 		//defines the mid point of this array
 		int mid = (first + last)/2;
@@ -39,10 +38,8 @@ public class BinarySearch {
 			mid = (first + last)/2;
 		}
 		if (first > last) {
-			System.out.println("not found 404");
+			System.out.println("Not found");
 		}
-		//return value
-		return index;
 	}
 	
 	int recursiveSearch(int[] arr, int key, int first, int last) {
@@ -58,7 +55,8 @@ public class BinarySearch {
 		}
 		
 		if(arr[mid] < key) {
-			//return recursive but with first being shifted left from mid
+			//return recursive but with first being shifted right from 				
+			//mid getting only the right half of the array 
 			return recursiveSearch(arr,key,mid + 1, last);
 		}
 		else if (arr[mid] == key) {
@@ -68,7 +66,8 @@ public class BinarySearch {
 			return index;
 		}
 		else {
-			//return recursive but with last being shifted right from mid
+			//return recursive but with last being shifted left from mid
+            //getting only the left half of the array
 			return recursiveSearch(arr,key,first, mid - 1);
 		}
 	}
